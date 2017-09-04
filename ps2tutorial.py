@@ -2,6 +2,7 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def main():
   # Oh boy, this where I self-troll.
   # Does "number letters" include hyphens or not?
@@ -20,12 +21,12 @@ def main():
   print(humidity[humidity < 20])
   print(temperature[humidity < 20])
 
-  plt.plot(humidity, temperature, 'b.', markersize = 12)
+  plt.plot(humidity, temperature, 'b.', markersize=12)
   plt.title('Jane Doe Python Tutorial')
   plt.xlabel('humidity (%)')
   plt.ylabel('temperature (F)')
-  plt.xlim(10,60)
-  plt.ylim(75,100)
+  plt.xlim(10, 60)
+  plt.ylim(75, 100)
   plt.plot(
       humidity[(temperature > 80) & (temperature < 100)],
       temperature[(temperature > 80) & (temperature < 100)],
