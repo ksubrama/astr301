@@ -56,8 +56,8 @@ def plot_incremental_mass(ax, rad, mstars, mgas):
   going on?
 
   I don't know what Newtonian mechanics predicts.  It just seems weird that galaxies seem
-  to have these flat curve for incremental masses for every section of annulus (even if that
-  means that the density is going doing as r^2...  for a sphere...  which this isn't... oh boy).
+  to have these flat curve for incremental masses for every section of annulus.  That would
+  mean that the density is going as 1/r^2...  for a sphere...  which this isn't... oh boy.
   """
 
 
@@ -216,6 +216,16 @@ def plot_dm_incremental_mass(ax, rad, mstars, mgas, vel):
 
   """!!QUESTIONS!! How does the radial distribution of dark matter compare to the radial
   distribution of stars and gas? What questions does this raise to your mind?"""
+  """ Gas mass is almost irrelevant.  It is multiple orders of magnitude smaller than the
+  mass present in stars within the radial window we are considering.  That said, gas mass
+  seems to be more prominent outside the galactic core.  Stars dominate the inernal bulk of
+  the galaxy.  Dark Matter (or missing matter) seems to just linger along the outskirts
+  of the galaxy and seems to increase in abundance as we look away from the galactic core.
+
+  Does it ever stop getting more abundant?  It's still interacting gravitationally...  why
+  such a peculiar distribution where it doesn't coalesce.  Is it because coalescing in the
+  middle of a galaxy requires collisions (i.e. EM interactions)?
+  """
 
 
 def main():
