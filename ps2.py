@@ -167,16 +167,16 @@ def log_total_enclosed_mass(rad, mstars, mgas, vel):
   # Find the total mass, the stellar mass, and the gas mass enclosed in this radius.
 
   totalmass = (vel[-1] ** 2) * rad[-1] / GRAV
-  print('Total inferred mass within %s kpc: %s m_sun' % (maxR, totalmass))
+  print('Total inferred mass within %g kpc: %.3e m_sun' % (maxR, totalmass))
   starmass = sum(mstars)
-  print('Star mass within %s kpc: %s m_sun' % (maxR, starmass))
+  print('Star mass within %g kpc: %.3e m_sun' % (maxR, starmass))
   gasmass = sum(mgas)
-  print('Gas mass within %s kpc: %s m_sun' % (maxR, gasmass))
+  print('Gas mass within %g kpc: %.3e m_sun' % (maxR, gasmass))
 
   """!!QUESTIONS!! What fraction of the total mass enclosed within 22 kpc is dark matter?
   Make your python script display this result"""
   dmmass = totalmass - starmass - gasmass
-  print('DM mass within %s kpc: %s m_sun' % (maxR, dmmass))
+  print('DM mass within %g kpc: %.3e m_sun' % (maxR, dmmass))
 
 
 def plot_total_incremental_mass(ax, rad, vel):
